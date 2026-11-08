@@ -1,0 +1,18 @@
+# Traitement Big Data
+pyspark==4.2.0
+
+# Manipulation et analyse de données
+pandas
+numpy
+pyarrow
+
+# Surveillance de la mémoire et des ressources système
+psutil
+
+# Visualisation des données
+matplotlib
+seaborn
+
+# Jupyter
+jupyter
+ipykernel

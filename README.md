@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Spark](https://img.shields.io/badge/Apache%20Spark-4.2-orange.svg)](https://spark.apache.org/)
 
-## 📊 Résultats clés
+## Résultats clés
 
 | Métrique | Naïf | Optimisé | Gain |
 |---|---|---|---|
@@ -17,7 +17,7 @@
 
 \* *Gonflé par le cache OS. En conditions réelles (disque froid) : ×10–×20 sur G2 et ×30–×50 sur G3.*
 
-## 🎯 Ce que fait le projet
+## Ce que fait le projet
 
 1. **Ingestion** : 3 mois de NYC Yellow Taxi (9.5M lignes brutes → 9.2M après nettoyage)
 2. **Nettoyage** : 8 pièges traités (dates hors période, montants négatifs, distance=0, doublons…)
@@ -27,7 +27,7 @@
 6. **Analyses métier** : courses par heure, top zones, tips par borough, pièges
 7. **ML** : k-means (k=5) sur 120 zones → 5 profils (aéroports, hyper-centre, résidentiel…)
 
-## 🚀 Lancer le projet
+## Lancer le projet
 
 ### Prérequis
 
@@ -121,7 +121,7 @@ java --version
 
 La version de PySpark affichée doit être `4.2.0`. Si Java n'est pas détecté par PySpark, vérifiez `JAVA_HOME` et redémarrez le terminal ou l'éditeur de code après avoir modifié les variables d'environnement.
 
-## 📦 Données
+## Données
 
 Le projet utilise les données NYC Yellow Taxi de janvier à mars 2024 ainsi que le fichier de correspondance des zones.
 
@@ -138,7 +138,7 @@ Créez les dossiers `data/raw/` et `data/lookup/` s'ils n'existent pas. Les fich
 
 > **Note :** si les fichiers ne sont pas présents localement, `ingestion.py` peut basculer automatiquement sur les URL CloudFront grâce au mécanisme de secours intégré. Une connexion Internet reste alors nécessaire.
 
-## ▶️ Exécution
+##  Exécution
 
 Depuis la racine du projet, avec l'environnement Python activé :
 
@@ -146,7 +146,7 @@ Depuis la racine du projet, avec l'environnement Python activé :
 python run_pipeline.py
 ```
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```text
 nyc-taxi-bigdata/
@@ -167,7 +167,7 @@ nyc-taxi-bigdata/
 └── README.md
 ```
 
-## 📍 Segmentation des zones (k-means, k=5)
+## Segmentation des zones (k-means, k=5)
 
 | Cluster | Zones | Profil | Nom métier |
 |---:|---:|---|---|

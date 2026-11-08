@@ -1,0 +1,55 @@
+# ============================================================
+# DONNÉES BRUTES (150 Mo, régénérables via URL si absentes)
+# ============================================================
+data/raw/*
+data/lookup/*       
+
+# ============================================================
+# SORTIES (régénérables en relançant le pipeline)
+# ============================================================
+output/
+
+# ============================================================
+# RAPPORT GÉNÉRÉ (PDF + fichiers auxiliaires LaTeX)
+# ============================================================
+rapport/*.pdf
+rapport/*.aux
+rapport/*.log
+rapport/*.toc
+rapport/*.out
+rapport/*.synctex.gz
+rapport/*.fdb_latexmk
+rapport/*.fls
+rapport/*
+
+# ============================================================
+# PYTHON
+# ============================================================
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# ============================================================
+# SPARK / JAVA (fichiers temporaires)
+# ============================================================
+spark-warehouse/
+metastore_db/
+derby.log
+*.log
+
+# ============================================================
+# ÉDITEURS / OS
+# ============================================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
